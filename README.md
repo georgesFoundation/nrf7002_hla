@@ -4,12 +4,14 @@ A Logic 2 High Level Analyzer (HLA) for the host bus of Nordic's nRF7002 Wi-Fi c
 takes the frames of Logic 2's SPI analyser and turns each chip-select period into one frame: a status
 register access, or a read or write with the memory region, the register or queue name, and the data.
 
+![nRF70 SPI decoding a write enable, a queue write and a status poll](logic2_nrf7002.png)
+
 Logic 2 extensions can only be written in Python.
 
 ## Use
 
-1. In Logic 2, open the **Extensions** panel, then **⋮ → Load Existing Extension**, and pick this
-   folder's `extension.json`.
+1. In Logic 2, open the **Extensions** panel and install **nRF70 SPI** from the Marketplace, or
+   load a clone of this repository with **⋮ → Load Existing Extension** and its `extension.json`.
 2. Add an **SPI** analyser: MOSI on DIO0, MISO on DIO1, clock on SCK, enable on CS (active low),
    8 bits, MSB first, CPOL 0, CPHA 0.
 3. Add **nRF70 SPI** with that SPI analyser as its input.
