@@ -55,3 +55,8 @@ python3 -m unittest discover tests
 
 `tests/saleae/` stands in for Logic 2's `saleae.analyzers` module, so the tests run with a plain
 Python 3.
+
+## License
+
+Licensed under either of the [Apache License, Version 2.0](LICENSE-APACHE) or the
+[MIT license](LICENSE-MIT), at your option.
