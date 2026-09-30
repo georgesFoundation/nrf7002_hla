@@ -1,0 +1,13 @@
+{
+  "name": "nRF70 SPI",
+  "apiVersion": "1.0.0",
+  "author": "Georges Palauqui (georges@foundation.xyz)",
+  "version": "0.1.0",
+  "description": "Saleae Logic 2 HLA for the host bus of Nordic's nRF7002 Wi-Fi companion, in single-line SPI mode",
+  "extensions": {
+    "nRF70 SPI": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "Nrf70Analyzer.Nrf70Analyzer"
+    }
+  }
+}
